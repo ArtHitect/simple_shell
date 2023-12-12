@@ -1,10 +1,13 @@
-#ifndef MAIN_H
+#ifndef SHELL_H
 
-#define MAIN_H
+#define SHELL_H
 
 int main(void);
+int is_delim(char c, const char *delim);
+int _isalpha(int c);
+int _atoi(char *s);
 
-Interactive_mode();
-Non_interactive_mode();
+interactive_mode();
+non_interactive_mode();
 
-#endif /* MAIN_H */
+#endif /* SHELL_H */
