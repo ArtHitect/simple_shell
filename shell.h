@@ -31,6 +31,12 @@ int _isalpha(int c);
  * Return: 0 if no numbers in string, converted number otherwise.
  */
 int _atoi(char *s);
+int _mycd(info_t *info)
+int _myexit(info_t *info);
+int _myhelp(info_t *info);
+
+void handle_chdir_error(info_t *info, const char *directory)
+void update_env(info_t *info, const char *env, const char *dir)
 
 interactive_mode();
 non_interactive_mode();
