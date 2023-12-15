@@ -18,6 +18,6 @@ int main(void)
 	{
 		non_interactive_mode();
 	}
-	
-	return 0;
+
+	return (0);
 }
