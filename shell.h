@@ -5,30 +5,35 @@
 int main(void);
 
 /**
- * is_delim - Checks if character is a delimiter.
+ * is_delim - Check if a character is a delimiter.
  *
+ * This function checks whether the given character is a delimiter.
+ *
+ * delim - The delimiter character to compare against.
  * @c: The character to check.
- * @delim: The delimiter string.
- *
- * Return: 1 if true, 0 if false.
+ * Return: Non-zero if the character is a delimiter, 0 otherwise.
  */
-int is_delim(char c, const char *delim);
+int is_delim(char c, char delim);
 
 /**
- * _isalpha - Checks for alphabetic character.
+ * _isalpha - Check if a character is alphabetic.
  *
+ * This function checks whether the given character is an alphabetic character.
+ *
+ * delim - The delimiter character to compare against.
  * @c: The character to check.
- *
- * Return: 1 if c is alphabetic, 0 otherwise.
+ * Return: Non-zero if the character is alphabetic, 0 otherwise.
  */
 int _isalpha(int c);
 
 /**
- * _atoi - Converts a string to an integer.
+ * _atoi - Convert a string to an integer.
  *
- * @s: The string to be converted.
+ * This function converts the given string to an integer.
  *
- * Return: 0 if no numbers in string, converted number otherwise.
+ * delim - The delimiter character to compare against.
+ * @s: The string to convert.
+ * Return: The converted integer.
  */
 int _atoi(char *s);
 int _mycd(info_t *info)

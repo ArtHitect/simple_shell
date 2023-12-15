@@ -10,6 +10,9 @@
  * This function prints an error message indicating that changing the
  * current directory to the specified directory has failed.
  *
+ * info - info Information about the error.
+ * directory - directory The directory causing the error.
+ *
  * print_error - info Pointer to the info_t structure.
  * _eputs(directory) - The directory that failed to be changed to.
  */
@@ -26,6 +29,10 @@ void handle_chdir_error(info_t *info, const char *directory)
  *
  * This function updates the "OLDPWD" and "PWD" environment variables
  * and returns from the _mycd function.
+ *
+ * info - info Information about the update.
+ * env - The environment to be updated.
+ * dir - The directory to consider during the update.
  *
  * _getenv - info Pointer to the info_t structure.
  * _sentenv - env_variable The environment variable to update.
@@ -44,6 +51,8 @@ void update_env(info_t *info, const char *env, const char *dir)
  *
  * This function implements the behavior of the 'cd' command in a shell.
  * It changes the current working directory based on the specified arguments.
+ *
+ * info - Information about the change.
  *
  * @char - info Pointer to the info_t structure.
  * Return: 0 on success, 1 on failure.
